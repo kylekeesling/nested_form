@@ -36,7 +36,7 @@ module NestedForm
         fields = @after_nested_form_callbacks.map do |callback|
           callback.call
         end
-        fields.join(" ").html_safe
+        fields.join("</td><td>").html_safe
       end
   end
 end
